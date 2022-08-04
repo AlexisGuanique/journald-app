@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.css';
 
 
-import { ImagesGallery } from './ImagesGallery';
+import { ImagesGallery } from '../components/ImagesGallery';
 import { useForm } from '../../hooks/useForm';
 import { setActiveNote } from '../../store/journal/journalSlice';
 import { startDeletingNote, startSavingNote, startUploadingFiles } from '../../store/journal/thunks';
@@ -18,6 +18,9 @@ export const NoteView = () => {
     const dispatch = useDispatch();
 
     const { active: note, messageSaved, isSaving } = useSelector(state => state.journal)
+    console.log([note.imageUrls])
+
+    
 
     const { body, title, date, onInputChange, formState } = useForm(note)
 
@@ -60,7 +63,7 @@ export const NoteView = () => {
     }
 
 
-
+    // console.log(note.imageUrls)
 
     return (
         <Grid

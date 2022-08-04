@@ -32,7 +32,6 @@ export const JournaldPage = () => {
       
       
       
-      {/* <NoteView /> */}
 
       <IconButton
         onClick={ onClickNewNote }

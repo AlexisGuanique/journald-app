@@ -23,9 +23,9 @@ export const startNewNote = () => {
 
         const newDoc = doc( collection( FirebaseDB, `${ uid }/journal/notas`));
 
-        const setDocResp = await setDoc( newDoc, newNote );
+        await setDoc( newDoc, newNote );
 
-        console.log({ newDoc, setDocResp });
+        // console.log({ newDoc, setDocResp });
 
         newNote.id = newDoc.id;
 
@@ -33,6 +33,7 @@ export const startNewNote = () => {
         dispatch( setActiveNote( newNote ));
     }
 }
+
 
 
 export const startLoadingNotes = () => {

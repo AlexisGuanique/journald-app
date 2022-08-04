@@ -86,4 +86,4 @@ export const {
   savingNewNote,
   setPhotoToActiveNote,
   clearNoteLogout,
-} = journalSlice.actions
+} = journalSlice.actions;
