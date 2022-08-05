@@ -6,7 +6,6 @@ import { MemoryRouter } from 'react-router-dom'
 import { LoginPage } from "../../../src/auth/pages/LoginPage"
 import { authSlice } from "../../../src/store/auth/authSlice"
 import { notAuthenticatedState } from "../../fixtures/authFixtures"
-import { startGoogleSingIn, startLoginWithEmailPassword } from "../../../src/store/auth/thunks"
 
 
 
