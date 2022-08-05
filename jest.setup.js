@@ -4,7 +4,7 @@ import 'setimmediate';
 
 
 // Para modificar el tiempo de espera para una respuesta en una prueba
-jest.setTimeout(20000)
+jest.setTimeout(5000)
 
 require('dotenv').config({
     path: '.env.test'

@@ -18,11 +18,6 @@ const {
 } = getEnvironments();
 
 
-
-
-
-
-
 // Your web app's Firebase configuration
 // dev/Prod
 const firebaseConfig = {
@@ -34,8 +29,8 @@ const firebaseConfig = {
   appId: "1:618295923844:web:f7d0b2c3a684e0b4cc9ed1"
 };
 
-// console.log('Hola')
-
+// Pruebas con las variables de entonrno
+///////////////////////////////////////////////////////////////////////
 // TESTING
 // const firebaseConfig = {
 //   apiKey: "AIzaSyCJK4I8leY74bx3Vnk9eURoy0v2Og0hM2I",
@@ -56,14 +51,16 @@ const firebaseConfig = {
 //   appId: VITE_APPID,
 // };
 
-console.log({
-  VITE_APIKEY,
-  VITE_AUTHDOMAIN,
-  VITE_PROJECTID,
-  VITE_STORAGEBUCKET,
-  VITE_MESSAGINGSENDERID,
-  VITE_APPID,
-})
+// console.log({
+//   VITE_APIKEY,
+//   VITE_AUTHDOMAIN,
+//   VITE_PROJECTID,
+//   VITE_STORAGEBUCKET,
+//   VITE_MESSAGINGSENDERID,
+//   VITE_APPID,
+// })
+
+//////////////////////////////////////////////////////////////////////////
 
 
 

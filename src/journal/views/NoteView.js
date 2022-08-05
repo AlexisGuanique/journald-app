@@ -18,7 +18,7 @@ export const NoteView = () => {
     const dispatch = useDispatch();
 
     const { active: note, messageSaved, isSaving } = useSelector(state => state.journal)
-    console.log([note.imageUrls])
+    // console.log([note.imageUrls])
 
     
 
